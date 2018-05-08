@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Lista de Quizzes:</h2>
+
+<% for (var i in quizzes){ %>
+ <% var quiz = quizzes [i]; %>
+ <p> Pregunta Número <%= quiz.id %>: <%= quiz.question %>? <%= quiz.answer%></p>
+<% } %>
+<a href='/'> Home </a>
+</body>
+</html>
