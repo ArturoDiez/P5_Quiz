@@ -3,10 +3,12 @@
 <body>
 <h2>Lista de Quizzes:</h2>
 
-<% for (var i in quizzes){ %>
+<ul>
+<% for (let i in quizzes){ %>
  <% var quiz = quizzes [i]; %>
- <p> Pregunta Número <%= quiz.id %>: <%= quiz.question %>? <%= quiz.answer%></p>
+ <li> <%= quiz.question %> <%= quiz.answer%></li>
 <% } %>
+</ul>
 <a href='/'> Home </a>
 </body>
 </html>
